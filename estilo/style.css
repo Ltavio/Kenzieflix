@@ -6,9 +6,6 @@ html, body, header, h1, figure, figcaption, div, img, ul, li, p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-/* diminuir as imagens dos cards
-movimentar e alterar a cor do botao */
-
 .cabecalho {
     display: flex;
     position: relative;
