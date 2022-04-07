@@ -1,0 +1,190 @@
+html, body, header, h1, figure, figcaption, div, img, ul, li, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* diminuir as imagens dos cards
+movimentar e alterar a cor do botao */
+
+.cabecalho {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 104px;
+    /* border: 1px solid white; */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 61px;
+}
+
+.logo img{
+    width: 153px;
+    
+}
+
+.geral{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 3.0vw;
+    /* font-size: 32px; */
+    line-height: 42px;
+    
+
+}
+
+.usuario {
+    display: flex;
+    list-style: none;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    /* border: 1px solid white; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    padding: 13px;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.img-container{
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px transparent black;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.container p {
+    color: grey;
+    padding-top: 15px;
+    font-size: 14;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+/* CARD DE ADD NOVO PERFIL */
+.container-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    padding: 13px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+
+.container-add p {
+    color: grey;
+    padding-top: 12px;
+}
+
+.vectores-container {
+    width: 130px;
+    height: 132px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E20;
+    transition: .8s;
+    border: 1.5px transparent black;
+}
+
+.vectores-container .vector1 {
+   width: 75px;
+   height: 75px;
+   opacity: 0.5;
+}
+
+
+.vectores-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    
+}
+
+/* Botão */
+.box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 25px;
+    box-sizing: border-box;
+}
+.botao {
+    color: grey;
+    border: 1.5px solid grey;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 0.5em 1.5em;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* HOVERS */
+.container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.container:hover > .img-container {
+    border: 1.5px solid #FFFFFF;
+    
+}
+
+.container:hover > p {
+    color: #FFFFFF;
+}
+
+/* ADD PERFIL */
+.container-add:hover .vectores-container {
+    border: 1.5px solid #FFFFFF;
+}
+
+.container-add:hover > .vectores-container img {
+    opacity: 1;
+}
+
+.container-add:hover > p {
+    color: #FFFFFF;
+}
+
+/* BOTAO */
+.botao:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
