@@ -10,69 +10,76 @@ html, body, header, h1, figure, figcaption, div, img, ul, li, p {
     display: flex;
     position: relative;
     width: 100%;
-    height: 104px;
-    /* border: 1px solid white; */
+    height: 11vh;
     justify-content: flex-start;
     align-items: center;
-    padding: 0px 61px;
+    padding: 0px 3%;
 }
 
 .logo img{
-    width: 153px;
-    
+    width: 11vw;
+    min-width: 70px;
 }
 
 .geral{
     display: flex;
-    position: relative;
+    position: absolute;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
-    margin-top: 30px;
+    height: 60vh;
+    min-width: 320px;
+    min-height: 467px;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 
-h1 {
+.pug {
     color: #ffffff;
     font-weight: 500;
     font-size: 3.0vw;
-    /* font-size: 32px; */
-    line-height: 42px;
-    
-
+    text-align: center;
+    width: 70vw;
+    margin: 0.67em;
+    background: transparent;
 }
 
 .usuario {
     display: flex;
+    justify-content: center;
     list-style: none;
-    max-width: 1200px;
+    max-width: 80%;
     flex-wrap: wrap;
-    margin: 20px 0px;
-    /* border: 1px solid white; */
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 130px;
-    padding: 13px;
-    margin: 0px 12px;
+    width: 17%;
+    min-width: 84px;
+    padding: 0px 13px;
+    margin: 0px 0.5vw;
     cursor: pointer;
 }
 
 .img-container{
-    width: 130px;
-    height: 130px;
+    width: 12vw;
+    max-width: 125px;
+    max-height: 125px;
+    min-width: 84px;
+    min-height: 84px;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .img-container img{
-    width: 100%;
-    height: 100%;
+    width: 12vw;
+    max-width: 125px;
+    max-height: 125px;
+    min-width: 84px;
+    min-height: 84px;
     border-radius: 8px;
     border: 2px transparent black;
     -webkit-transition: -webkit-transform .5s ease;
@@ -81,55 +88,48 @@ h1 {
 
 .container p {
     color: grey;
-    padding-top: 15px;
-    font-size: 14;
+    margin: 0.6em 0;
     font-weight: 600;
     line-height: 18px;
 }
+
 
 /* CARD DE ADD NOVO PERFIL */
 .container-add {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 140px;
-    padding: 13px;
-    margin: 0px 8px;
+    width: 17%;
+    min-width: 84px;
+    padding: 0px 13px;
+    margin: 0px 0.5vw;
     cursor: pointer;
 }
 
-
 .container-add p {
     color: grey;
-    padding-top: 12px;
+    text-align: center;
+    margin: 0.2em 0;
 }
 
 .vectores-container {
-    width: 130px;
-    height: 132px;
+    width: 13vw;
+    max-width: 130px;
+    max-height: 132px;
+    min-width: 84px;
+    min-height: 84px;
     overflow: hidden;
     border-radius: 8px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1E1E20;
-    transition: .8s;
-    border: 1.5px transparent black;
 }
-
-.vectores-container .vector1 {
-   width: 75px;
-   height: 75px;
-   opacity: 0.5;
-}
-
 
 .vectores-container img{
-    width: 100%;
-    height: 100%;
+    width: 13vw;
+    max-width: 130px;
+    max-height: 132px;
+    min-width: 84px;
+    min-height: 84px;
     border-radius: 8px;
-    
+    opacity: 0.5;
 }
 
 /* Botão */
@@ -137,7 +137,7 @@ h1 {
     display: flex;
     position: relative;
     justify-content: center;
-    top: 25px;
+    top: 7vh;
     box-sizing: border-box;
 }
 .botao {
@@ -168,12 +168,9 @@ h1 {
 }
 
 /* ADD PERFIL */
-.container-add:hover .vectores-container {
-    border: 1.5px solid #FFFFFF;
-}
-
 .container-add:hover > .vectores-container img {
     opacity: 1;
+    border: 1.5px solid #FFFFFF;
 }
 
 .container-add:hover > p {
@@ -184,4 +181,31 @@ h1 {
 .botao:hover {
     background-color: #FFFFFF;
     color: black;
+}
+
+/* MOBILE */ 
+
+@media only screen and (max-width: 900px) {
+    .pug {
+        font-size: 30px;    
+    }
+@media only screen and (max-width: 800px) {
+    .container p, .container-add p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .cabecalho {
+        max-height: 55px;
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    .container, .container-add {
+        padding: 5px 13px;
+    }
+    .box {
+        top: 25px;
+    }
 }
