@@ -204,7 +204,7 @@ html, body, header, h1, figure, figcaption, div, img, ul, li, p {
 
 @media only screen and (max-width: 450px) {
     .container, .container-add {
-    margin: 0px 0.9vw;
+    margin: 1.9vw;
     }
 }
 
