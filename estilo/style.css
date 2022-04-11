@@ -186,6 +186,7 @@ html, body, header, h1, figure, figcaption, div, img, ul, li, p {
 /* MOBILE */ 
 
 @media only screen and (max-width: 900px) {
+    .geral {}
     .pug {
         font-size: 30px;    
     }
@@ -200,6 +201,13 @@ html, body, header, h1, figure, figcaption, div, img, ul, li, p {
         max-height: 55px;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .container, .container-add {
+    margin: 0px 0.9vw;
+    }
+}
+
 
 @media only screen and (max-width: 326px) {
     .container, .container-add {
