@@ -206,6 +206,9 @@ html, body, header, h1, figure, figcaption, div, img, ul, li, p {
     .container, .container-add {
     margin: 1.9vw;
     }
+    .box {
+        top: 4vh;
+    }
 }
 
 
